@@ -66,7 +66,8 @@ Add data visualizations using Plotly in the web app.
     `python run.py`
 
 3. Go to http://0.0.0.0:3001/
-Your web app should now be running if there were no errors.
+
+The web app should now be running if there were no errors.
 
 Now, open another Terminal Window.
 
@@ -74,7 +75,7 @@ Type
 ```
 env|grep WORK
 ```
-You'll see output that looks something like this:
+The output looks something like this:
 ![image](https://user-images.githubusercontent.com/88694623/152629785-d5f1fef4-2011-4466-9163-c3960c8dd98b.png)
 In a new web browser window, type in the following:
 ```
