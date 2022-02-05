@@ -1,7 +1,7 @@
 # Project: Disaster Response Pipeline
 
 ## Project Overview
-I gained and improved my data engineering abilities in the Udacity - Data Scientist Nanodegree Program, which has increased my opportunities and potential as a data scientist. In this project, I'll use these talents to analyse disaster data from [Figure Eight](https://www.figure-eight.com/) in order to create a model for a disaster-messaging API.
+I gained and improved my data engineering abilities in the [Udacity - Data Scientist Nanodegree Program](https://www.udacity.com/course/data-scientist-nanodegree--nd025), which has increased my opportunities and potential as a data scientist. In this project, I'll use these talents to analyse disaster data from [Figure Eight](https://www.figure-eight.com/) in order to create a model for a disaster-messaging API.
 
 A data collection in the Project Workspace contains genuine messages sent during disaster occurrences. I'll build a machine learning pipeline to classify these occurrences and deliver the notifications to the relevant disaster relief organisation.
 
