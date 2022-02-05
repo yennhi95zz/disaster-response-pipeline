@@ -5,6 +5,10 @@ import pandas as pd
 import numpy as np
 
 def load_data(messages_filepath, categories_filepath):
+    '''
+    INPUT: messages_filepath & categories_filepath
+    OUTPUT: a merged df which is the conbination of messages & categories files
+    '''
     messages = pd.read_csv(messages_filepath)
     categories = pd.read_csv(categories_filepath)
     df = messages.merge(categories, how='left',on=['id'])
@@ -14,6 +18,15 @@ def load_data(messages_filepath, categories_filepath):
 
 
 def clean_data(df):
+    '''
+    INPUT: a dataframe
+    OUTPUT:
+    - split the 'categories' column into respectives categories splited by ';'
+    - get the values of each category
+    - change the data type into 'int'
+    - drop the old 'categories' column and add the new columns into the df.
+    Result: a cleaned df
+    '''
     categories = df['categories'].str.split(pat=';', expand=True)
     categories.columns = [x[:-2] for x in categories.iloc[0,:]]
     for col in categories.columns:
@@ -28,11 +41,19 @@ def clean_data(df):
 
 
 def save_data(df, database_filename):
+    '''
+    INPUT: a df and the database_filename which contains the df later.
+    OUPUT: the df is saved in the database
+    '''
     engine = create_engine(f'sqlite:///{database_filename}')
     return df.to_sql('DisasterResponse', engine, if_exists='replace', index=False)  
 
 
 def main():
+    '''
+    INPUT: None
+    OUTPUT: Perform 3 steps of Data processing: Load, Clean & Save data.
+    '''
     if len(sys.argv) == 4:
 
         messages_filepath, categories_filepath, database_filepath = sys.argv[1:]
