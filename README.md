@@ -1,5 +1,16 @@
 # Project: Disaster Response Pipeline
 
+## Project Overview
+I gained and improved my data engineering abilities in the Udacity - Data Scientist Nanodegree Program, which has increased my opportunities and potential as a data scientist. In this project, I'll use these talents to analyse disaster data from [Figure Eight](https://www.figure-eight.com/) in order to create a model for a disaster-messaging API.
+
+A data collection in the Project Workspace contains genuine messages sent during disaster occurrences. I'll build a machine learning pipeline to classify these occurrences and deliver the notifications to the relevant disaster relief organisation.
+
+A web app will be included in the project, which will allow an emergency worker to enter a new message and receive classification results in numerous categories. The data will be visualised on the web app as well.
+
+A few screenshots of the web app are shown below.
+![image](https://user-images.githubusercontent.com/88694623/152629914-8ad0e597-f8dc-49d1-a01a-a6f41db4f74d.png)
+![image](https://user-images.githubusercontent.com/88694623/152629918-a14224c9-8edc-4d9c-85d2-b3105f42098b.png)
+
 ## File structure
 ```
 - app
